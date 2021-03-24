@@ -58,7 +58,7 @@ class _CameraScreenState extends State<CameraScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             FloatingActionButton(
-              // heroTag: "btn1",
+              heroTag: "btn1",
               child: Icon(isFull
                   ? Icons.fullscreen_exit_rounded
                   : Icons.fullscreen_rounded),
@@ -71,7 +71,7 @@ class _CameraScreenState extends State<CameraScreen> {
               },
             ),
             FloatingActionButton(
-              // heroTag: "btn2",
+              heroTag: "btn2",
               child: Icon(Icons.camera_alt),
               onPressed: () async {
                 try {
@@ -88,7 +88,7 @@ class _CameraScreenState extends State<CameraScreen> {
               },
             ),
             FloatingActionButton(
-              // heroTag: "btn3",
+              heroTag: "btn3",
               child: ClipOval(child: (imagePath ?? "").isNotEmpty
                   ? Center(child: Container(width: double.infinity, child: Image.file(File(imagePath))))
                   : Icon(Icons.image_rounded)),
