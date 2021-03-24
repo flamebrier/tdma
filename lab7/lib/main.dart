@@ -6,7 +6,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +31,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _downCounter = 0;
   int _upCounter = 0;
-  int _pointerCount = 0;
 
   List<String> _pointers = [];
 
@@ -78,9 +76,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Text(
                     'up: $_upCounter',
-                  ),
-                  Text(
-                    'pointerCount: $_pointerCount',
                   ),
                   Expanded(
                       child: ListView.builder(
